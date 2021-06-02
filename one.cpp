@@ -14,7 +14,7 @@ double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)
 
    while(low<=high)
    {
-      int cut1=(low+high)>>2;             // first cut from minimum array       
+      int cut1=(low+high)/2;             // first cut from minimum array       
       int cut2=(n1+n2+1)/2-cut1;         //works for both equal and unequal length arrays eg. (n1=5,n2=5) or(n1=5,n2=6)
 
       int l1=cut1==0?INT_MIN:nums1[cut1-1];
